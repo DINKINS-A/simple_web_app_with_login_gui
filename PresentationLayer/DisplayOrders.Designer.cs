@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class DisplayCustomers
+    partial class DisplayOrders
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // DisplayCustomers
+            // DisplayOrders
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "DisplayCustomers";
-            Text = "DisplayCustomers";
-            Load += DisplayCustomers_Load;
+            ClientSize = new Size(1750, 450);
+            Name = "DisplayOrders";
+            Text = "Orders";
+            Load += DisplayOrders_Load;
             ResumeLayout(false);
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class DisplayCustomers
+    partial class Error
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            errorLabel = new Label();
             SuspendLayout();
             // 
-            // DisplayCustomers
+            // errorLabel
+            // 
+            errorLabel.AutoSize = true;
+            errorLabel.Location = new Point(24, 68);
+            errorLabel.Name = "errorLabel";
+            errorLabel.Size = new Size(68, 25);
+            errorLabel.TabIndex = 0;
+            errorLabel.Text = "ERROR";
+            errorLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // Error
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "DisplayCustomers";
-            Text = "DisplayCustomers";
-            Load += DisplayCustomers_Load;
+            ClientSize = new Size(315, 160);
+            Controls.Add(errorLabel);
+            Name = "Error";
+            Text = "Error";
+            Load += Error_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label errorLabel;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class DisplayCustomers
+    partial class Popup
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            textBoxMessage = new TextBox();
             SuspendLayout();
             // 
-            // DisplayCustomers
+            // textBoxMessage
+            // 
+            textBoxMessage.Location = new Point(219, 102);
+            textBoxMessage.Name = "textBoxMessage";
+            textBoxMessage.Size = new Size(150, 31);
+            textBoxMessage.TabIndex = 0;
+            // 
+            // Popup
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "DisplayCustomers";
-            Text = "DisplayCustomers";
-            Load += DisplayCustomers_Load;
+            ClientSize = new Size(590, 253);
+            Controls.Add(textBoxMessage);
+            Name = "Popup";
+            Text = "Popup";
+            Load += Popup_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBoxMessage;
     }
 }
